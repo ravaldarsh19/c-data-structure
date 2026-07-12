@@ -10,8 +10,8 @@ void main()
 {
     int a,choice;
     while(1){
-    printf("1.push \n 2.pop \n 3.display" );
-    printf("Enter your choice");
+    printf("1.push \n 2.pop \n 3.display \n 4.exit" );
+    printf("\n Enter your choice");
     scanf("%d",&choice);
     switch(choice)
     {
@@ -26,6 +26,9 @@ void main()
         case 3:
             display();
             break;
+        case 4:
+            printf("Exit ");
+            exit(0);
         default:
             printf("invalid choice");
     }
@@ -57,6 +60,7 @@ void pop(){
     for(i=top;i>=0;i--)
     {
         printf("%d \n",stack[i]);
+
 
  }
 
